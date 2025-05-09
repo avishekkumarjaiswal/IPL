@@ -1577,11 +1577,11 @@ with tab1:
 
             # Display recent sold items
             for item_name, team_bought, sold_amount in sold_to_show:
-                # Truncate item name to a maximum of 12 characters, ensuring at least 10 characters are visible
-                if len(item_name) > 12:
-                    truncated_item_name = item_name[:12] + ''
+                # Truncate item name to a maximum of 20 characters, ensuring at least 10 characters are visible
+                if len(item_name) > 20:
+                    truncated_item_name = item_name[:20] + ''
                 else:
-                    truncated_item_name = item_name  # Show the full name if it's 12 characters or less
+                    truncated_item_name = item_name  # Show the full name if it's 20 characters or less
 
                 # Ensure the item name is displayed in a single line
                 formatted_amount = format_amount(sold_amount) if sold_amount else ""  # Format the sold amount if available
